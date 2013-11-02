@@ -19,32 +19,32 @@ import org.junit.runner.RunWith;
  *
  */
 
-public class XORTausch {
+public class XORTauschTest {
     
-    final static private Logger LOG = Logger.getLogger(XORTausch.class.getName());
+    
 
     @Test
     public void tauscheIntegerWerte(){
 	int registerA=8;
 	int registerB=38;
 	
-	LOG.log(Level.INFO,"regA: "+registerA+" regB: "+registerB);
-	LOG.log(Level.INFO,"----");
+	System.out.println("regA: "+registerA+" regB: "+registerB);
+	System.out.println("----");
 	
 	// A <- A xor B
 	registerA=registerA ^ registerB;
-	LOG.log(Level.INFO,"regA: "+registerA);
+	System.out.println("regA: "+registerA);
 	
 	// B <- B xor A
 	registerB=registerB ^ registerA;
-	LOG.log(Level.INFO,"regB: "+registerB);
+	System.out.println("regB: "+registerB);
 	
 	// A <- A xor B
 	registerA=registerA ^ registerB;
-	LOG.log(Level.INFO,"regA: "+registerA);
+	System.out.println("regA: "+registerA);
 	
-	LOG.log(Level.INFO,"----");
-	LOG.log(Level.INFO,"regA: "+registerA+" regB: "+registerB);
+	System.out.println("----");
+	System.out.println("regA: "+registerA+" regB: "+registerB);
     }
 
 }
