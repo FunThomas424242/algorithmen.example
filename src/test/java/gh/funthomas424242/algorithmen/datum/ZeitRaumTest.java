@@ -9,7 +9,6 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 import org.joda.time.DateTime;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -33,8 +32,7 @@ public class ZeitRaumTest {
 	final protected int erwarteteMonate;
 	final protected int erwarteteTage;
 
-	protected Calendar calStart;
-	protected Calendar calEnde;
+	
 
 	public ZeitRaumTest(final int startTag, final int startMonat,
 			final int startJahr, final int endeTag, final int endeMonat,
@@ -53,18 +51,17 @@ public class ZeitRaumTest {
 		this.erwarteteTage = erwarteteTage;
 	}
 
-	@Before
-	public void beforeTest() {
-		calStart = Calendar.getInstance(ZEITZONE, LOCALE);
-		calStart.clear();
-		calStart.set(startJahr, startMonat-1, startTag);
-		calEnde = Calendar.getInstance(ZEITZONE, LOCALE);
-		calEnde.clear();
-		calEnde.set(endeJahr, endeMonat-1, endeTag);
-	}
+	
 
 	@Test
 	public void testDifferenzBerechnungNormal() {
+		
+		final Calendar calStart = Calendar.getInstance(ZEITZONE, LOCALE);
+		calStart.clear();
+		calStart.set(startJahr, startMonat-1, startTag);
+		final Calendar calEnde = Calendar.getInstance(ZEITZONE, LOCALE);
+		calEnde.clear();
+		calEnde.set(endeJahr, endeMonat-1, endeTag);
 
 		final DateTime startDatum = new DateTime(calStart.getTimeInMillis());
 		final DateTime endeDatum = new DateTime(calEnde.getTimeInMillis());
@@ -83,6 +80,13 @@ public class ZeitRaumTest {
 	
 	@Test
 	public void testStartEndeVertauscht() {
+		
+		final Calendar calStart = Calendar.getInstance(ZEITZONE, LOCALE);
+		calStart.clear();
+		calStart.set(startJahr, startMonat-1, startTag);
+		final Calendar calEnde = Calendar.getInstance(ZEITZONE, LOCALE);
+		calEnde.clear();
+		calEnde.set(endeJahr, endeMonat-1, endeTag);
 
 		final DateTime endeDatum = new DateTime(calStart.getTimeInMillis());
 		final DateTime startDatum = new DateTime(calEnde.getTimeInMillis());
