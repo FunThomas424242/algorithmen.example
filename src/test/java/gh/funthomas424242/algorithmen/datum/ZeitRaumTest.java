@@ -72,7 +72,7 @@ public class ZeitRaumTest {
 
 		System.out.println("Start: " + startDatum + " Ende: " + endeDatum);
 
-		final ZeitRaum zeitraum = new ZeitRaum(startDatum.toDate(),
+		final ZeitRaum zeitraum = new ZeitRaum(ZEITZONE,LOCALE,startDatum.toDate(),
 				endeDatum.toDate());
 		final Abstand zeitAbstand = zeitraum
 				.berechneAbstandVonStartBisEndeDatum();
@@ -90,7 +90,7 @@ public class ZeitRaumTest {
 
 		System.out.println("Start: " + startDatum + " Ende: " + endeDatum);
 
-		final ZeitRaum zeitraum = new ZeitRaum(startDatum.toDate(),
+		final ZeitRaum zeitraum = new ZeitRaum(ZEITZONE,LOCALE,startDatum.toDate(),
 				endeDatum.toDate());
 		final Abstand zeitAbstand = zeitraum
 				.berechneAbstandVonStartBisEndeDatum();
