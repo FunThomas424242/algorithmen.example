@@ -8,16 +8,17 @@ import org.joda.time.DateTimeZone;
 import org.joda.time.LocalDate;
 import org.joda.time.Period;
 import org.joda.time.PeriodType;
-import org.joda.time.tz.DateTimeZoneBuilder;
 
 public class ZeitRaum {
 
 	protected Boolean liegtEndeVormAnfang;
 
+
 	protected Date startDatum;
 	protected Date endeDatum;
 	
 	final protected DateTimeZone zeitzone;
+	// not used for date computing - only for string output and formatting
 	final protected Locale locale;
 
 	public ZeitRaum(final TimeZone zeitzone, final Locale locale, final Date startDatum, final Date endeDatum) {
@@ -49,6 +50,10 @@ public class ZeitRaum {
 		
 		return new Abstand(monate,tage);
 
+	}
+
+	public Boolean getLiegtEndeVormAnfang() {
+		return liegtEndeVormAnfang;
 	}
 
 	@Override
