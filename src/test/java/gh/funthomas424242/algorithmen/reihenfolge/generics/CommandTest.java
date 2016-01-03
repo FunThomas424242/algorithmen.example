@@ -1,8 +1,6 @@
 package gh.funthomas424242.algorithmen.reihenfolge.generics;
 
 import gh.funthomas424242.algorithmen.reihenfolge.generics.simplestate.Command;
-import gh.funthomas424242.algorithmen.reihenfolge.generics.simplestate.False;
-import gh.funthomas424242.algorithmen.reihenfolge.generics.simplestate.True;
 
 import org.junit.Rule;
 import org.junit.Test;
