@@ -1,4 +1,4 @@
-package gh.funthomas424242.algorithmen.reihenfolge;
+package gh.funthomas424242.algorithmen.reihenfolge.generics;
 
 public class Command<B extends Bool> implements Validateable<B> {
 

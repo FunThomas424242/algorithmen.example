@@ -1,4 +1,8 @@
-package gh.funthomas424242.algorithmen.reihenfolge;
+package gh.funthomas424242.algorithmen.reihenfolge.generics;
+
+import gh.funthomas424242.algorithmen.reihenfolge.generics.Command;
+import gh.funthomas424242.algorithmen.reihenfolge.generics.False;
+import gh.funthomas424242.algorithmen.reihenfolge.generics.True;
 
 import org.junit.Rule;
 import org.junit.Test;
