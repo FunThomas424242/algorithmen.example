@@ -4,39 +4,39 @@ import gh.funthomas424242.algorithmen.reihenfolge.generics.Bool;
 import gh.funthomas424242.algorithmen.reihenfolge.generics.False;
 import gh.funthomas424242.algorithmen.reihenfolge.generics.True;
 
-public class Command<B extends Bool> implements Validateable<B> {
+public class ImmutableCommand<B extends Bool> implements Validateable<B> {
 
     // mandatory
     protected String titel;
     // optional
     protected String isbn;
 
-    public Command<False> setTitel(final String titel) {
-        Command<False> command = new Command<False>();
+    public ImmutableCommand<False> setTitel(final String titel) {
+        ImmutableCommand<False> command = new ImmutableCommand<False>();
         command.isbn = this.isbn;
         command.titel = titel;
         return command;
     }
 
-    public Command<B> setIsbn(final String isbn) {
-        Command<B> command = new Command<B>();
+    public ImmutableCommand<B> setIsbn(final String isbn) {
+        ImmutableCommand<B> command = new ImmutableCommand<B>();
         command.isbn = isbn;
         command.titel = this.titel;
         return command;
     }
 
     @Override
-    public Command<True> validate() {
+    public ImmutableCommand<True> validate() {
         if (titel == null) {
             throw new RuntimeException("Titel ist ein Pflichtparameter!");
         }
-        final Command<True> command = new Command<True>();
+        final ImmutableCommand<True> command = new ImmutableCommand<True>();
         command.isbn = this.isbn;
         command.titel = this.titel;
         return command;
     }
 
-    public static void execute(Command<True> command) {
+    public static void execute(ImmutableCommand<True> command) {
         command.doit();
     }
 
