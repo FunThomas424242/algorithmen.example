@@ -1,4 +1,4 @@
-package gh.funthomas424242.algorithmen.reihenfolge.generics.complextate;
+package gh.funthomas424242.algorithmen.reihenfolge.generics.complexstate;
 
 import gh.funthomas424242.algorithmen.reihenfolge.generics.Bool;
 import gh.funthomas424242.algorithmen.reihenfolge.generics.True;
