@@ -6,8 +6,6 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Ignore;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.scalatest.junit.JUnitRunner;
 
 import de.schauderhaft.degraph.configuration.NamedPattern;
 
@@ -32,7 +30,6 @@ public class DependencyTest {
     }
 
     @Test
-    @Ignore
     public void test() {
         assertThat(
                 classpath().noJars()

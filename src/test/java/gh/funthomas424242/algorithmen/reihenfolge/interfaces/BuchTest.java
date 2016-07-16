@@ -1,6 +1,7 @@
 package gh.funthomas424242.algorithmen.reihenfolge.interfaces;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.fail;
 
 import javax.xml.bind.ValidationException;
 

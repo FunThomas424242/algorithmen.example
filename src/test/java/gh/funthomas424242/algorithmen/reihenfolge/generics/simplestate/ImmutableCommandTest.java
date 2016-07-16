@@ -1,12 +1,11 @@
 package gh.funthomas424242.algorithmen.reihenfolge.generics.simplestate;
 
-import gh.funthomas424242.algorithmen.reihenfolge.generics.False;
-import gh.funthomas424242.algorithmen.reihenfolge.generics.True;
-import gh.funthomas424242.algorithmen.reihenfolge.generics.simplestate.ImmutableCommand;
-
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import gh.funthomas424242.algorithmen.reihenfolge.generics.False;
+import gh.funthomas424242.algorithmen.reihenfolge.generics.True;
 
 public class ImmutableCommandTest {
 
