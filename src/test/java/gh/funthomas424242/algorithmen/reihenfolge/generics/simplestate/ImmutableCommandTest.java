@@ -1,5 +1,7 @@
-package gh.funthomas424242.algorithmen.reihenfolge.generics;
+package gh.funthomas424242.algorithmen.reihenfolge.generics.simplestate;
 
+import gh.funthomas424242.algorithmen.reihenfolge.generics.False;
+import gh.funthomas424242.algorithmen.reihenfolge.generics.True;
 import gh.funthomas424242.algorithmen.reihenfolge.generics.simplestate.ImmutableCommand;
 
 import org.junit.Rule;
