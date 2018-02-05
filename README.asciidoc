@@ -1,0 +1,7 @@
+//image:https://api.bintray.com/packages/funthomas424242/funthomas424242-libs/rades.forge-addon/images/download.svg[link="https://bintray.com/funthomas424242/funthomas424242-libs/rades.forge-addon/_latestVersion"]
+image:https://travis-ci.org/FunThomas424242/algorithmen.example.svg?branch=master["Build Status", link="https://travis-ci.org/FunThomas424242/algorithmen.example"]
+image:https://codecov.io/gh/FunThomas424242/algorithmen.example/branch/master/graph/badge.svg[link="https://codecov.io/gh/FunThomas424242/algorithmen.example"]
+image:https://badge.waffle.io/FunThomas424242/algorithmen.example.svg?columns=all["Waffle.io - Columns and their card count", link="https://waffle.io/FunThomas424242/algorithmen.example"]
+
+# algorithmen.example
+Sammlung einfacher Algorithmen an simplen Beispielen.
