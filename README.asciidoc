@@ -1,4 +1,4 @@
-image:https://api.bintray.com/packages/funthomas424242/funthomas424242-libs/rades.forge-addon/images/download.svg[link="https://bintray.com/funthomas424242/funthomas424242-libs/rades.forge-addon/_latestVersion"]
+image:https://api.bintray.com/packages/funthomas424242/funthomas424242-libs/algorithmen.example/images/download.svg[link="https://bintray.com/funthomas424242/funthomas424242-libs/algorithmen.example/_latestVersion"]
 image:https://travis-ci.org/Huluvu424242/algorithmen.example.svg?branch=master["Build Status", link="https://travis-ci.org/Huluvu424242/algorithmen.example"]
 image:https://codecov.io/gh/Huluvu424242/algorithmen.example/branch/master/graph/badge.svg[link="https://codecov.io/gh/Huluvu424242/algorithmen.example"]
 
